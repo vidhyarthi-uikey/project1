@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.sign{
+    background-image: url(carousel.html);
+    height: 500px;
+    width: 100%;
+    background-size:cover;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.form{
+    height: 300px;
+    width: 280px;
+    background-color: aliceblue;
+
+}
+.signup{
+    height: 50px;
+    background-color: rgb(154, 210, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.frm form input{
+height: 30px;
+  margin: 10px; 
+margin-left: 30px;
+}
+.frm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gu h1{
+   display: flex;  
+   justify-content: center;
+}
+.ccard{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+     gap: 30px; 
+     margin-top: 30px; 
+}
+.gd{
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+#gn{
+    display: flex;
+    justify-content: center;
+}
+.gd:hover{
+    transform: scale(1.3);
+    z-index: 2;
+    transition: 0.5sec ease 0s;
+}
