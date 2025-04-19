@@ -61,13 +61,16 @@ body{
     text-decoration: none;
     color: black;
 }
+.navbar2 .contant ul li{
+    color: rgb(159, 220, 68);
+}
 .manu-icon{
     display: none;
     font-size: 24;
     cursor: pointer;
 }
-@media (mam-width: 100%) {
-    .navbar2 .contant ul{
+@media (max-width: 100%) {
+    .navbar .contant ul{
         display: none;
         flex-direction: column;
         background: #444;
@@ -77,15 +80,18 @@ body{
         width: 100%;
         text-align: center;
     }
-#click:checked ~ .navbar2 .contant ul{
+#click:checked ~ .navbar .contant ul{
     display: flex;
 }
 .manu-icon{
     display: block;
 }
-.navbar2{
+.navbar{
     flex-direction: row;
     position: relative;
+}
+header{
+    background-size: cover;
 }
 }
 .navbar2 .contant ul{    
@@ -119,11 +125,7 @@ transition: all 0.5s ease 0s;
     gap: 30px; 
       margin-left: 100px;  
 }  
-#bar{
-    color: greenyellow;
-    font-size: 20px;
-}
-    
+
 
  header{
   background-image: url(oia.html.html); 
@@ -134,7 +136,7 @@ transition: all 0.5s ease 0s;
   justify-content: center;
   align-items: center;
   animation-name: changeimage;
-  animation-duration: 5s;
+  animation:changeimage 5s ease infinite;
 } 
 
 @keyframes changeimage{
@@ -156,7 +158,8 @@ transition: all 0.5s ease 0s;
 }
 
 .header-contant h3{
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 20px;
     display: flex;
     justify-content: center; 
     color: white;  
@@ -167,11 +170,11 @@ transition: all 0.5s ease 0s;
     justify-content: center; 
     color: white;
     text-decoration: none;
+    font-size: 60px;
 }
-h1{
+ h1{
     font-size: 50px;
-    color: white;
-}
+ }
 .button{
      padding: 8px 15px; 
     background-color: rgb(161, 225, 77);
@@ -239,10 +242,10 @@ width: 520px;
     margin-right: 600px;
     position:static;
 }
-h6{
+/* h6{
     letter-spacing: 5px;
-    color: rgb(144, 189, 78);
-}
+    color: rgb(144, 189, 78); */
+
 .taj{
     display: flex;
     justify-content: center; 
@@ -268,6 +271,11 @@ h6{
 .d1{
     height:80px ;
     width: 80px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
     background-color: greenyellow; 
     border: 1px solid black;
     border: none;
@@ -275,6 +283,11 @@ h6{
 .d2{
     height: 80px ;
     width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
      background-color: greenyellow; 
     border: 1px solid black;
     border: none;
@@ -282,6 +295,11 @@ h6{
 .d3{
     height: 80px ;
     width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
     background-color: greenyellow; 
     border: 1px solid black;
     border: none;
@@ -338,6 +356,8 @@ align-items: center;
     display: flex;
     justify-content: center;
     font-size: 20px;
+    letter-spacing: 5px;
+    color: rgb(144, 189, 78);
 }
 .scard{
     display: flex;
@@ -347,39 +367,65 @@ align-items: center;
     padding: 20px;
 }
 .tr{
-    border: 1px solid black;
-    padding: 40px;
+     border: 1px solid black;
+     display: flex;
+     justify-content: center;
+     justify-items: center;
+     padding: 40px;  
 }
 .tr i{
+    height: 70px;
+    width: 70px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
-    /* padding: 30px; */
+    justify-items: center;
+    color: white;
     border: 1px solid greenyellow;
-    color: greenyellow;
+    background-color: greenyellow;
+    align-items: center;
+    margin-left: 100px;
+    margin-bottom: 10px;
 }
 .ou{
     border: 1px solid black;
     padding: 40px;
 } 
 .ou i{
+   
+    height: 70px;
+    width: 70px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
-     /* padding: 30px;  */
+    justify-items: center;
+    color: white;
     border: 1px solid greenyellow;
-    color: greenyellow;
-
+    background-color: greenyellow;
+    align-items: center;
+    margin-left: 100px;
+    margin-bottom: 10px;
 }
 .us{
     border: 1px solid black;
     padding: 40px;
 }
 .us i{
+  
+    height: 70px;
+    width: 70px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
-    /* padding: 30px; */
+    justify-items: center;
+    color: white;
     border: 1px solid greenyellow;
-    color: greenyellow;
+    background-color: greenyellow;
+    align-items: center;
+    margin-left: 100px;
+    margin-bottom: 10px;
 }
+/* #packages */
 .package{
     display: flex;
     justify-content: center;
@@ -387,7 +433,7 @@ align-items: center;
     margin-top: 150px;
 }
 .age{
-    margin-top: 200px;
+    margin-top: 100px;
 }
 .age h1{
     display: flex;
@@ -444,5 +490,5 @@ align-items: center;
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
